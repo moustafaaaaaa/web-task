@@ -1,0 +1,3 @@
+var x= prompt('what is the value you want to calculate its square root');
+var y = Math.sqrt(x);
+alert('square root of ' + x + ' is '+ y);
