@@ -1,0 +1,27 @@
+var name, age, phoneNumber, mobileNumber, email;
+
+do {
+    name = prompt('Enter your name only characters:');
+} while (!/^[A-Za-z]+$/.test(name));
+
+do {
+    age = prompt('Enter your age:');
+} while (!/^\d+$/.test(age) || age < 10 || age > 99);
+
+do {
+    phoneNumber = prompt('Enter your phone number 8 digits only:');
+} while (!/^\d{8}$/.test(phoneNumber));
+
+do {
+    mobileNumber = prompt('Enter your mobile number 11 digits only:');
+} while (!/^\d{11}$/.test(mobileNumber));
+
+do {
+    email = prompt('Enter your email:');
+} while (!/^[\w-]+(\.[\w-]+)*@[\w-]+(\.[\w-]+)+$/.test(email));
+
+console.log('Welcome ' + name);
+console.log('Age: ' + age);
+console.log('Phone number: ' + phoneNumber);
+console.log('Mobile number: ' + mobileNumber);
+console.log('Email: ' + email);
