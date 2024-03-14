@@ -1,0 +1,6 @@
+    function reverseParameters(...params) {   
+    
+    return params.reverse();
+     }
+
+      console.log(reverseParameters(1, 2, 3)); 
