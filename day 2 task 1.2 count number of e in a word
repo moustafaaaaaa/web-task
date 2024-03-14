@@ -1,0 +1,9 @@
+var word = prompt('enter any word');
+var n = word.split('');
+var sum = 0;
+for(var i =0; i<word.length;i++)
+{
+    if(word[i]=='a' || word[i]=='A')
+    sum++;
+}
+console.log(sum);
