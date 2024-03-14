@@ -1,0 +1,10 @@
+function myFunc(param1, param2) {
+    
+    if (arguments.length !== 2) {
+        
+        throw Error('only two parameters allowed ');
+    }
+
+    console.log('Parameters received:', param1, param2);
+}
+    myFunc(10, 20); 
