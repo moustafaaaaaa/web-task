@@ -1,0 +1,3 @@
+var x = prompt('what is the value of the circle raduis');
+var area = x*x*3.14 ;
+alert('total area of the circle is ' + area);
