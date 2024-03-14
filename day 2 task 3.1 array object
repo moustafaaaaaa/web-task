@@ -1,0 +1,21 @@
+var numbers = [];
+
+for (var i = 0; i < 3; i++) {
+    var input;
+  
+    do {
+        input = prompt('Enter element ' + (i + 1) + ' (a number):');
+     
+        input = parseFloat(input);
+    } while (isNaN(input)); 
+
+    numbers.push(input);
+}
+
+var sum = numbers[0] + numbers[1] + numbers[2];
+var multiplication = numbers[0]*numbers[1]*numbers[2];
+var division = numbers[0]/numbers[1]/numbers[2];
+
+console.log('Sum:', sum);
+console.log('Multiplication:', multiplication);
+console.log('Division:', division);
