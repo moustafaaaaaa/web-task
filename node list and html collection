@@ -1,0 +1,6 @@
+An HTMLCollection is a list of DOM elements that match certain criteria. For example
+they may have the same tag name or class 
+Or they may be related in a specific context (like children of a particular element)
+
+a NodeList is a list of nodes But what is a node? A node is any individual element in the DOM tree
+This could be elements, attributes, texts, comments and so on
