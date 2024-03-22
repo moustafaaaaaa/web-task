@@ -1,0 +1,33 @@
+var arrNames=[];
+var arrAges=[];
+
+
+do{
+   var noOfperson = prompt('enter the number of persons')
+}
+while(isNaN(noOfperson) || noOfperson==='' || noOfperson=='0' || noOfperson === 'null')
+var noOfperson = Number(noOfperson);
+
+for(var i=0;i<noOfperson;i++)
+{
+    do{
+           var nameOfpersons = prompt('enter person name' + (i+1));
+    }
+    while(isFinite(nameOfpersons) || nameOfpersons.length<2 || nameOfpersons.length>10)  
+    arrNames.push(nameOfpersons);
+
+    do{
+         var agesOfperson = prompt('enter person age ' + (i+1));
+    }
+    while(isNaN(agesOfperson));
+    arrAges.push(agesOfperson);
+}
+console.log(arrNames);
+console.log(arrAges);
+
+
+var tableBody=document.getElementsByTagName('tbody')[0];
+for(var x=0; x<arrNames.length;x++)
+{
+    tableBody.innerHtml+='<tr><td>'+arrNames[x]+'</td><td>'+arrAges[x]+'</td></tr>';
+}
